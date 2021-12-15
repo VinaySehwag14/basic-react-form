@@ -1,0 +1,8 @@
+.main {
+  background-color: #fff;
+  height: 25vh;
+  width: 48vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
