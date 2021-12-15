@@ -5,10 +5,17 @@ const Main = () => {
     <div className="main">
       <form>
         <label htmlFor="username">Username</label>
-        <input type="text" id="username" placeholder="Name..." />
+        <input
+          className="input"
+          type="text"
+          id="username"
+          placeholder="Name..."
+        />
         <label htmlFor="age">Age(years):</label>
-        <input type="text" id="age" placeholder="Age..." />
-        <input type="submit" value="Submit" />
+        <input className="input" type="text" id="age" placeholder="Age..." />
+        <button type="submit" value="Submit">
+          Add User
+        </button>
       </form>
     </div>
   );

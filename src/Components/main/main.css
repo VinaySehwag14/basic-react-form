@@ -1,8 +1,31 @@
 .main {
   background-color: #fff;
-  height: 25vh;
+  height: 30vh;
   width: 48vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.input {
+  width: 100%;
+  margin-top: 10px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+label {
+  font-weight: 700;
+}
+
+button {
+  width: 80px;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: purple;
+  outline: none;
+  color: white;
 }
