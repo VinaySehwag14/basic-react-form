@@ -1,6 +1,18 @@
+import { useRef, useState } from "react";
 import "./main.css";
 
 const Main = () => {
+  const [name, setName] = useState("");
+  const [age, setAge] = useState("");
+
+  const inputName = useRef(null);
+
+  const onButtonClick = (e) => {
+    e.preventDefault();
+    setName(inputName.current.value);
+    console.log("setBan", setName(inputName.current.value));
+    console.log(inputName.current.value);
+  };
   return (
     <div className="main">
       <form>
@@ -10,10 +22,16 @@ const Main = () => {
           type="text"
           id="username"
           placeholder="Name..."
+          ref={inputName}
         />
         <label htmlFor="age">Age(years):</label>
         <input className="input" type="text" id="age" placeholder="Age..." />
-        <button type="submit" value="Submit">
+        <button
+          onClick={inputName}
+          onClick={onButtonClick}
+          type="submit"
+          value="Submit"
+        >
           Add User
         </button>
       </form>

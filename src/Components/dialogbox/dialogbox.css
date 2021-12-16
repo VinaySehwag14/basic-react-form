@@ -1,0 +1,28 @@
+.dialogBox {
+  /* border-top: 2px solid #ccc; */
+  /* border-radius: 20px; */
+  /* background-color: red; */
+  margin: 5px;
+}
+
+.dialogBox__header {
+  background-color: rgb(102, 3, 102);
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+}
+
+.dialogBox__body {
+  padding-top: 15px;
+  padding-left: 15px;
+  background-color: white;
+  padding-bottom: 100px;
+  padding-right: 120px;
+}
+
+button {
+  padding: 5px;
+  background-color: rgb(102, 3, 102);
+  color: white;
+}
